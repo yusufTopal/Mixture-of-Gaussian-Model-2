@@ -20,7 +20,7 @@ int main()
 	int key = 1;
 	
 	pMOG2 = createBackgroundSubtractorMOG2(500, 300, false);
-	namedWindow("Blur_Resize", 0);
+	namedWindow("Blur Resized Output", 0);
 	VideoCapture cap("deneme.avi");
 	
 
@@ -59,7 +59,7 @@ int main()
 			//imshow("Shadow_Removed Output", binaryImg);
 			//imshow("MOG2 Output", fgMaskMOG2);
 			//setMouseCallback("Blur_Resize", CallBackFunc, NULL);
-			imshow("Blur_Resize Output", resize_blur_Img);
+			imshow("Blur Resized Output", resize_blur_Img);
 		}
 		key = waitKey(30);
 	}
